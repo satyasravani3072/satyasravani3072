@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="scripts/scripts.js"></script>
+
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- nav bar starts here -->
+<nav class="nav" style="background: #33383c;">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">AEONIT</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+<!-- nav bar ends here -->
+</head>
+<body>
+<div class="container-fluid text-center">
+     <h2 class="margin h2_text_sty text-center aeon_all_page_padding">OUR<b>PORTFOLIO</b></h2>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="box">
+                <img src="images/webpage1.png">
+                <div class="box-content">
+                    <div class="inner-content">
+                        <h3 class="title">AEONIT services</h3>
+                        <span class="post">index page</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="box">
+                <img src="images/webpage2.png">
+                <div class="box-content">
+                    <div class="inner-content">
+                        <h3 class="title">AEONIT services</h3>
+                        <span class="post">about page</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="box">
+                <img src="images/webpage3.png">
+                <div class="box-content">
+                    <div class="inner-content">
+                        <h3 class="title">AEONIT services</h3>
+                        <span class="post">services page</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+            <div class="col-sm-3">
+            <div class="box">
+                <img src="images/webpage4.png">
+                <div class="box-content">
+                    <div class="inner-content">
+                        <h3 class="title">AEONIT services</h3>
+                        <span class="post">contact page</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+</div>
+<hr>
+
+  <footer class="section bg-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="">
+                        <h6 class="footer-heading text-uppercase footer_text">Quick Links</h6>
+                        <ul class="list-unstyled footer-link mt-4">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                          
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="">
+                        <h6 class="footer-heading text-uppercase footer_text">Our Services</h6>
+                        <ul class="list-unstyled footer-link mt-4">
+                            <li><a href="">Terms and Conditions </a></li>
+                            <li><a href="">Privacy and Policy</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+
+                
+
+                <div class="col-lg-4">
+                    <div class="">
+                        <h6 class="footer-heading text-uppercase footer_text">Contact Us</h6>
+                        <p class="contact-info mt-4">Contact us if need help withanything</p>
+                        <p class="contact-info">+91 9898989898</p>
+                        <div class="mt-5">
+                            <ul class="list-inline">
+                                 <li class="list-inline-item"><a href="#"><img src="images/yellow1.png"></a></li>
+                                <li class="list-inline-item"><a href="#"><img src="images/yellow2.png"></a></li>
+                                <li class="list-inline-item"><a href="#"><img src="images/yellow3.png"></a></li>
+                                <li class="list-inline-item"><a href="#"><img src="images/yellow4.png"></a></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <p class="footer-alt mb-0 f-14 footer_text">2022 © AEONIT Services, All Rights Reserved<br>
+            D.No:2-12-8/1. B.K.kumar. 1st floor. MVP colony,Sector-9,Near DRDA office, Visakhapatnam-530017<br>
+            our E-Mail: <a href="">admin@aeonit.org</p>
+        </div>
+    </footer>
+
+
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+    </body>
+</html>
